@@ -1,0 +1,40 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body {
+  font-family: "Inconsolata", sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 5rem 0;
+}
+
+main {
+  margin: 0 auto;
+  padding: .6em 0;
+  /*background: #f1f1f1;*/
+}
+
+h2 {
+  font-size: 2em;
+}
+
+img {
+  width: 200px;
+}
+
+
+form {
+  padding: 2em 0;
+}
+
+#flash {
+  background-color: #ffff00;
+  padding: .4em;
+}
+
+#user {
+  background-color: #eeeeee;
+  padding: .4em;
+}

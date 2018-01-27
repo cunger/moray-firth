@@ -1,0 +1,8 @@
+%h2
+  Upload your .mdb file
+
+%form(action="upload" method="POST" enctype="multipart/form-data")
+  %p
+    %input(type="file" name="file")
+  %p
+    %input(type="submit" value="Upload")
