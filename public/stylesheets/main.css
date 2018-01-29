@@ -4,10 +4,11 @@
 body {
   font-family: "Inconsolata", sans-serif;
   text-align: center;
+  background: #fff;
 }
 
 header {
-  padding: 5rem 0;
+  padding-top: 6rem;
 }
 
 main {
@@ -16,17 +17,60 @@ main {
   /*background: #f1f1f1;*/
 }
 
-h2 {
-  font-size: 2em;
+h2,
+th {
+  padding-top: 2rem;
+  font-size: 1.6em;
 }
 
 img {
   width: 200px;
 }
 
-
 form {
-  padding: 2em 0;
+  padding: 1em 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.2em 0.6em;
+}
+
+table {
+  margin: 1em auto;
+  border-spacing: 5em;
+}
+
+thead tr {
+  padding-bottom: 2em;
+}
+
+tr {
+  line-height: 1.5em;
+}
+
+tbody tr:nth-child(2n) {
+  background: #f1f1f1;
+}
+
+th {
+  text-align: left;
+  padding: 1em 1em 1em 0;
+}
+td {
+  padding-right: 4em;
+  text-align: left;
+}
+td:first-child,
+td:last-child {
+  text-align: right;
+}
+
+.with-background {
+  padding: 0.2em 0.6em;
+  line-height: 1.5em;
+  /*background-color: #eee;*/
 }
 
 #flash {

@@ -1,3 +1,6 @@
 .env
 Gemfile.lock
 coverage
+lib/export/*.mdb 
+lib/export/*.csv
+!lib/export/export_individuals.csv

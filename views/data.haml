@@ -1,3 +1,18 @@
 
 %h2
-  Data uploaded.
+  #{@data.size} dolphins loaded.
+
+%table
+  %thead
+    %tr
+      %th ID
+      %th Name
+      %th Birthdate
+      %th Age
+  %tbody
+    - @data.to_a.each do |dolphin|
+      %tr
+        %td #{dolphin.id}
+        %td #{dolphin.name}
+        %td #{dolphin.birthdate_string}
+        %td #{dolphin.alive? ? dolphin.age : '☠'}

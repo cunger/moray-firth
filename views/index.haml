@@ -1,8 +1,18 @@
+
 %h2
+  Use pre-loaded database export
+
+  %form(action="load" method="get")
+    %input(type="submit" value="Load")
+
+%h2
+  or
+  %br
   Upload your .mdb file
 
-%form(action="upload" method="POST" enctype="multipart/form-data")
-  %p
-    %input(type="file" name="file")
-  %p
-    %input(type="submit" value="Upload")
+%form(action="upload" method="post")
+  (Not yet supported)
+  -# %p
+  -#   %input(type="url" name="url")
+  -# %p
+  -#   %input(type="submit" value="Upload")

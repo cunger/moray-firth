@@ -8,6 +8,8 @@ configure(:development) do
   require 'sinatra/reloader'
 end
 
+require_relative 'lib/catalogue'
+
 configure do
   enable :sessions
   set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
@@ -19,10 +21,15 @@ get '/' do
   haml :index
 end
 
-post '/upload' do
-  # `mdb-export #{params[:file][:tempfile]} Stiffs`
+get '/load' do
+  @data = Catalogue.new
+  @data.load
 
   haml :data
+end
+
+post '/upload' do
+  # Not yet supported.
 end
 
 #### Helpers ####
